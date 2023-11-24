@@ -1,0 +1,32 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.accordion {
+  background: $accordion-bg;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  @include h3;
+  color: $white;
+
+  .rounded {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .paragraph {
+    @include h4;
+    color: $paragraph-color;
+    width: 100%;
+  }
+  .icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-out;
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+}

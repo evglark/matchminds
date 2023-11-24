@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  MATCH_MINDS_DEV:
+    container_name: MATCH_MINDS_DEV
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: match_minds_dev:dev
+    restart: always
+    ports:
+      - 3000:3000

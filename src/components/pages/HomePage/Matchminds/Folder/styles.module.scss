@@ -1,0 +1,23 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.folder {
+  color: $white;
+  min-height: 15.375rem;
+  background: no-repeat url('/images/pages/home/matchminds/folder.png');
+  background-size: 100% 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 4.063rem 2.688rem 3.375rem 2rem;
+
+  h5 {
+    @include h5;
+    color: $dirty-white;
+    max-width: 28.438rem;
+    opacity: 0.6;
+  }
+  button {
+    width: fit-content;
+  }
+}

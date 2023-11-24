@@ -1,0 +1,79 @@
+@import 'src/styles/variables';
+
+.coverWrapper {
+  min-height: 232px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .editButtonWrapper {
+    position: absolute;
+    right: 0px;
+    top: 13px;
+  }
+}
+
+.textBlockWrapper.left {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.textBlockWrapper.right {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.textBlockWrapper {
+  margin-top: 64px;
+
+  .blockWrapperMD {
+    width: 383px;
+  }
+
+  .editButtonWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+  }
+
+  .titleWrapper {
+    margin-bottom: 7px;
+    color: $white;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .titleInputWrapper {
+    border: 1px solid $asphalt;
+    color: $white;
+    background: var(--toastify-color-dark);
+  }
+
+  .textWrapper {
+    color: $lang-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .descAreaWrapper {
+    border: 1px solid $asphalt;
+    color: $lang-white;
+    background: var(--toastify-color-dark);
+  }
+
+  .imgWrapper {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .editButtonWrapper {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

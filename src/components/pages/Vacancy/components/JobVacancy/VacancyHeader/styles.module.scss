@@ -1,0 +1,81 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.coverWrapper {
+  @include HelveticaNeueCyr;
+
+  .spaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titleWrapper {
+    margin-bottom: 16px;
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .dateWrapper {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $lang-white;
+  }
+
+  .rateWrapper {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    @include textGradient(linear-gradient(103deg, #754FFE -104.45%, #C812C1 194.38%));
+  }
+
+  .departmentWrapper {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $white;
+  }
+
+  .descWrapper {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+
+    .title {
+      color: $lang-white;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .separator {
+      margin-top: 8px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $gray;
+    }
+  }
+
+  .experienceWrapper {
+    display: flex;
+    gap: 16px;
+
+    .experienceTitleWrapper {
+      color: $lang-white;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .experienceValueWrapper {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      @include textGradient(linear-gradient(76deg, #DF6F34 -3.29%, #F1CC5F 92.81%));
+    }
+  }
+}

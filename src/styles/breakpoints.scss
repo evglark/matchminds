@@ -1,0 +1,41 @@
+@mixin sm-device {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md-device {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg-device {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl-device {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl-device {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin custom($screen) {
+  @media (max-width: ($screen + 'px')) {
+    @content;
+  }
+}
+
+@mixin big-lg-device {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}

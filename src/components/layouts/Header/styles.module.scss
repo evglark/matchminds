@@ -1,0 +1,71 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.wrapper {
+  position: fixed;
+  height: 5.5rem;
+  top: 0;
+  z-index: 9;
+  width: 100vw;
+  background-color: $dark-grey;
+  padding: 0 3.063rem;
+  @include md-device {
+    padding: 0 1rem;
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  @include landing-container(3.063rem);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include md-device {
+    gap: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.25rem;
+
+    @include custom(1200) {
+      gap: 1rem;
+    }
+
+    @include big-lg-device {
+      display: none;
+    }
+  }
+
+  .btnsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.188rem;
+    margin-left: 2.188rem;
+    @include custom(1200) {
+      gap: 1rem;
+    }
+    @include big-lg-device {
+      display: none;
+    }
+  }
+
+  .burger {
+    display: none;
+    @include big-lg-device {
+      display: flex;
+    }
+  }
+  .mobileBtn {
+    display: none;
+    @include big-lg-device {
+      display: inline-block;
+      margin-left: -1.375rem;
+    }
+  }
+}

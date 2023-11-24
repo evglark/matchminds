@@ -1,0 +1,35 @@
+@import 'src/styles/variables';
+
+.simpleButton {
+  cursor: pointer;
+  color: $white;
+  padding: 0.5rem 2rem;
+  height: 2.5rem;
+  font: $normal;
+  border-radius: 37.5rem;
+  text-wrap: nowrap;
+  width: fit-content;
+}
+
+.clear {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.bg {
+  background: $bg-btn;
+  border: none;
+}
+
+.lg {
+  height: 44px;
+}
+
+.md {
+  height: 33px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}

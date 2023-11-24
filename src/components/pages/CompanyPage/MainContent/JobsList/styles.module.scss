@@ -1,0 +1,140 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.listWrapper {
+  margin-top: 64px;
+
+  .titleWrapper {
+    margin-bottom: 24px;
+    color: $white;
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .jobCard {
+    padding: 16px 16px 24px 16px;
+    box-shadow: 0px 12px 16px 0px $black;
+    background: linear-gradient(100.91deg, $dark-grey -16.78%, $darkest-black 63.22%);
+    border-radius: 0.5rem;
+    @include HelveticaNeueCyr;
+
+    .headerCard {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+
+      .departmentWrapper {
+        display: flex;
+        gap: 8px;
+
+        .imgWrapper {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+
+        .titleDepartmentWrapper {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          color: $white;
+          font-size: 24px;
+          line-height: normal;
+        }
+      }
+
+      .dateWrapper {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        color: $lang-white;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .contentWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .mainWrapper {
+        padding: 24px 0 0 48px;
+
+        .titleWrapper {
+          margin-bottom: 6px;
+          color: $white;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        .descWrapper {
+          display: flex;
+          gap: 8px;
+
+          .title {
+            color: $lang-white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+
+          .separator {
+            margin-top: 8px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $gray;
+          }
+        }
+
+        .experienceWrapper {
+          display: flex;
+          gap: 16px;
+
+          .experienceTitleWrapper {
+            color: $lang-white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+
+          .experienceValueWrapper {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            @include textGradient(linear-gradient(76deg, #DF6F34 -3.29%, #F1CC5F 92.81%));
+          }
+        }
+      }
+
+      .rateWrapper {
+        padding-top: 8px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        @include textGradient(linear-gradient(103deg, #754FFE -104.45%, #C812C1 194.38%));
+      }
+    }
+
+    .buttonWrapper {
+      margin-top: 24px;
+      padding-left: 48px;
+    }
+
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .seeMoreBtnWrapper {
+    margin-top: 32px;
+
+    .seeMoreBtn {
+      height: 40px;
+      background: linear-gradient(101deg, #292929 -16.78%, #1A1A1A 63.22%);
+    }
+  }
+}

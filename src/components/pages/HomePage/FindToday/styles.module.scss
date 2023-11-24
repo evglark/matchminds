@@ -1,0 +1,68 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.findToday {
+  @include landing-container(10rem);
+  margin: 6.25rem auto;
+  background: $find-today-bg;
+  border-radius: 1rem;
+  @include big-lg-device {
+    @include fit-current-size(max-width, 2rem, 1);
+  }
+
+  .contentWrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/pages/home/findToday/bg_left.svg'),
+      url('/images/pages/home/findToday/bg_right.svg');
+    background-position:
+      left center,
+      right center;
+    background-repeat: no-repeat, no-repeat;
+    padding: 3rem 1rem;
+
+    @include big-lg-device {
+      background-image: url('/images/pages/home/findToday/bg_left_mobile.svg'),
+        url('/images/pages/home/findToday/bg_right_mobile.svg');
+      margin: 6.25rem 0;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+  .content {
+    max-width: 23.563rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      @include h5;
+      opacity: 0.6;
+      color: $dirty-white;
+      text-align: center;
+      span {
+        background: linear-gradient(103deg, #754FFE -104.45%, #C812C1 194.38%);
+
+        /* Set thee background size and repeat properties. */
+        background-size: 57%;
+        background-repeat: repeat;
+
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1136px) {
+    margin: 6.25rem 1rem;
+  }
+}

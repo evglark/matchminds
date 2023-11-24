@@ -1,0 +1,20 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.layout {
+  background: $bg;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.page {
+  background: $bg;
+  padding: 5.5rem 0 0;
+}

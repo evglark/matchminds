@@ -1,0 +1,120 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.menuLanguageDropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  cursor: pointer;
+
+  @include big-lg-device {
+    padding: 1rem 0;
+    border-top: 0.125rem solid $asphalt;
+    border-bottom: 0.125rem solid $asphalt;
+    align-items: flex-start;
+  }
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.094rem;
+    @include h5;
+    p {
+      margin: 0;
+    }
+    .imageContainer {
+      margin: auto;
+    }
+  }
+  .drop {
+    background-color: $dark-grey;
+    position: absolute;
+    left: 0;
+    width: 8.25rem;
+    top: 150%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.875rem;
+    border-radius: 0.25rem;
+    color: $lang-white !important;
+    @include h5;
+
+    div {
+      display: block;
+      padding: 0 0 0 2.375rem;
+      @include big-lg-device {
+        padding: 0 0 0 2.5rem;
+        &:hover {
+          font-weight: normal;
+        }
+      }
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+
+      &:first-child {
+        padding-top: 0.938rem;
+      }
+
+      &:last-child {
+        padding-bottom: 0.938rem;
+      }
+    }
+
+    @include big-lg-device {
+      background-color: transparent;
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+      color: $white;
+    }
+  }
+  &.revertedLang {
+    @include big-lg-device {
+      border-top: none;
+      border-bottom: none;
+      padding: 0 0 1rem;
+    }
+    .language {
+      @include big-lg-device {
+        flex-direction: row-reverse;
+      }
+    }
+    .drop {
+      top: -10.875rem;
+      @include big-lg-device {
+        top: 170%;
+        div {
+          padding: 0;
+          &:first-child {
+            padding-top: 0.7rem;
+          }
+        }
+      }
+    }
+    .icon {
+      display: none;
+    }
+  }
+  .icon {
+    display: none;
+    @include big-lg-device {
+      position: absolute;
+      right: 0;
+      display: block;
+      transform: rotate(0deg);
+      transition: transform 0.3s ease-out;
+      &.rotated {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

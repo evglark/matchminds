@@ -1,0 +1,12 @@
+@import 'src/styles/variables';
+
+.textLink {
+  color: white;
+  font: $normal;
+  text-decoration: none;
+  text-wrap: nowrap;
+
+  &:hover {
+    color: $purple;
+  }
+}

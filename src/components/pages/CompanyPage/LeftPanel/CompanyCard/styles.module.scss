@@ -1,0 +1,72 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.cardWrapper {
+  padding: 24px 24px 32px 24px;
+  width: 272px;
+  box-shadow: 0px 12px 16px 0px $black;
+  background: linear-gradient(100.91deg, $dark-grey -16.78%, $darkest-black 63.22%);
+  border-radius: 0.5rem;
+  @include HelveticaNeueCyr;
+  position: relative;
+
+  .avatarWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+    }
+
+    .editButtonWrapper {
+      position: absolute;
+      right: -31px;
+    }
+  }
+
+  .titleWrapper {
+    margin-bottom: 8px;
+    color: $white;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .titleInputWrapper {
+    border: 1px solid $asphalt;
+    color: $white;
+    background: linear-gradient(100.91deg, $dark-grey -16.78%, $darkest-black 63.22%);
+  }
+
+  .descWrapper {
+    margin-bottom: 24px;
+    color: $lang-white;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .descAreaWrapper {
+    border: 1px solid $asphalt;
+    border-top: none;
+    color: $lang-white;
+    background: linear-gradient(100.91deg, $dark-grey -16.78%, $darkest-black 63.22%);
+  }
+
+  .editButtonWrapper {
+    position: absolute;
+    right: -31px;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+
+    .button {
+      height: 33px;
+    }
+  }
+}

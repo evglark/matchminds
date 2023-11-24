@@ -1,0 +1,47 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.wrapper {
+  background: no-repeat url('/images/pages/home/explore/bg_img.svg');
+  background-position: top right;
+  @include big-lg-device {
+    background-size: 9.375rem 18rem;
+  }
+  .explore {
+    padding: 9.313rem 0 6.563rem;
+    @include landing-container(10rem);
+    margin: 0 auto;
+    @include big-lg-device {
+      padding: 4rem 1rem 3rem;
+    }
+    .textBlock {
+      max-width: 32.5rem;
+      .text {
+        @include h5;
+        color: $dirty-white;
+        opacity: 0.6;
+        max-width: 26.438rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .featuresList {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+      row-gap: 5rem;
+      column-gap: 2.688rem;
+
+      @include big-lg-device {
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1136px) {
+    padding: 0 1rem;
+  }
+}

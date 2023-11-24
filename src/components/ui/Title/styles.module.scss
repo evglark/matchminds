@@ -1,0 +1,50 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.h1 {
+  @include h1;
+  color: $white;
+  @include big-lg-device {
+    max-width: 19rem;
+  }
+
+  span {
+    display: inline-block;
+    background: linear-gradient(45deg, $purple, $pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+  }
+}
+
+.h2 {
+  @include h2;
+  color: $white;
+
+  span {
+    background: linear-gradient(45deg, $orange, $yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+}
+.purpleH2 {
+  @include h2;
+  color: $white;
+
+  span {
+    background: linear-gradient(45deg, $purple, $pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+}

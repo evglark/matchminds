@@ -1,0 +1,34 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.container {
+  padding-top: calc(88px + 32px);
+  padding-bottom: 250px;
+  display: flex;
+  gap: 24px;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .left {
+    width: 300px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  @include lg-device {
+    flex-direction: column;
+    gap: 8px;
+
+    .left {
+      width: 100%;
+      gap: 8px;
+    }
+  }
+}

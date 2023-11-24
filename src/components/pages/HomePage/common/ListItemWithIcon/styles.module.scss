@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.item {
+  display: flex;
+  gap: 1rem;
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .title {
+      @include h3;
+      color: $white;
+    }
+    .text {
+      @include h5;
+      color: $dirty-white;
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.registerContainer {
+  margin: 4rem auto 132px;
+  padding: 2rem;
+  width: 22.875rem;
+  box-shadow: 0px 12px 16px 0px $black;
+  background: linear-gradient(100.91deg, $dark-grey -16.78%, $darkest-black 63.22%);
+  border-radius: 0.5rem;
+  @include h5;
+
+  p {
+    color: $white;
+    text-align: center;
+    &.freePeriodText {
+      text-align: left;
+      margin: 1rem 0;
+    }
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: $dirty-white;
+    p {
+      opacity: 0.6;
+    }
+  }
+
+  .btnEmpty {
+    color: $violet;
+  }
+}

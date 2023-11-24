@@ -1,0 +1,40 @@
+//colors
+$bg: #101010;
+
+$white: #fff;
+$dirty-white: #f4f4f4;
+$lang-white: #a3a3a3;
+
+$primary: #754ffe;
+$secondary: #64748b;
+
+$black: #000;
+$darkest-black: #1a1a1a;
+$dark-grey: #292929;
+$asphalt: #313030;
+$gray: #4e4e4e;
+
+$candidate-gray: #999;
+$candidate-green: #65c178;
+
+$purple: #754ffe;
+$pink: #c812c1;
+$orange: #df6f34;
+$yellow: #f1cc5f;
+$violet: #754ffe;
+
+//button gradients
+$outline-btn: linear-gradient(75.73deg, #df6f34 -3.29%, #f1cc5f 92.81%);
+$bg-btn: linear-gradient(103.36deg, #754ffe -104.45%, #c812c1 194.38%);
+
+//accordion
+$accordion-bg: linear-gradient(100.91deg, #292929 -16.78%, #1a1a1a 63.22%);
+$paragraph-color: rgba(255, 255, 255, 0.6);
+
+//homePage -> FindToday section
+$find-today-bg: linear-gradient(100.91deg, #292929 -16.78%, #1a1a1a 63.22%);
+
+//fonts
+$normal:
+  normal 400 1rem/1.5rem 'HelveticaNeueCyr',
+  sans-serif;

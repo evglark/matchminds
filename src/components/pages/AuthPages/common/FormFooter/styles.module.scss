@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+
+.formFooter {
+  .devider {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    color: $gray;
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: $gray;
+    }
+    margin-bottom: 1.5rem;
+  }
+  .snIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+}

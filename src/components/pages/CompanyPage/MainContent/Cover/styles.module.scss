@@ -1,0 +1,11 @@
+.coverWrapper {
+  min-height: 232px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .editButtonWrapper {
+    position: absolute;
+    right: 0px;
+    top: 13px;
+  }
+}

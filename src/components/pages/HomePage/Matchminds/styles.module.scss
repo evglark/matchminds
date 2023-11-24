@@ -1,0 +1,56 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.wrapper {
+  background: no-repeat url('/images/pages/home/matchminds/bg_img.svg');
+  background-position: 0 9.063rem;
+
+  @include big-lg-device {
+    background-size: 182px 332px;
+    background-position: 0 16rem;
+  }
+  .matchminds {
+    padding-top: 9.063rem;
+    //max content width minus horizontal paddings
+    @include landing-container(10rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 11.063rem;
+
+    @include big-lg-device {
+      padding: 6.25rem 1rem 0;
+      gap: 6.25rem;
+    }
+    .flexWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .textBlock {
+        max-width: 30.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.063rem;
+      }
+      .videoWrapper {
+        video {
+          width: 500px;
+        }
+      }
+    }
+    .folderBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3.5rem;
+      @include big-lg-device {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1136px) {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,70 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.label {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  &:hover {
+    .checkbox {
+      transition: border-color 0.3s linear;
+      border-color: $orange;
+    }
+    span {
+      color: $white;
+      transition: color 0.3s linear;
+    }
+  }
+  .nativeCheckbox {
+    appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+  }
+  span {
+    cursor: pointer;
+    @include h4;
+    color: $lang-white;
+  }
+  .checkbox {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 1rem;
+    border: 1px solid $gray;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    &.error {
+      border-color: $pink;
+    }
+    .check {
+      display: none;
+    }
+
+    &.checked {
+      .check {
+        display: block;
+      }
+    }
+    &.disabled {
+      cursor: not-allowed;
+      background-color: $gray;
+      &:hover {
+        border: 1px solid $gray;
+      }
+    }
+  }
+  a {
+    line-height: 1.5rem;
+    background: linear-gradient(75.73deg, $orange -3.29%, $yellow 92.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+}

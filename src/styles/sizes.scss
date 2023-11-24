@@ -1,0 +1,14 @@
+@mixin landing-container($horizontal-padding) {
+  //max content width minus horizontal paddings
+  max-width: calc(90rem - $horizontal-padding * 2);
+}
+
+@mixin fit-current-size($property, $padding, $multiply) {
+  //width or height calculation for fitting the screen sizes:
+  //$property - css property
+  //$padding - sum of both horizontal paddings
+  //$multiply - as default enter 1, but if we want to calculate the height
+  //            of image to fit the dimensions of the full width screen,
+  //            it's ratio between height and width ($multiply = height * 100 /width)
+  #{$property}: calc((100vw - $padding) * $multiply);
+}
